@@ -2,9 +2,6 @@
 // Session start
 session_start();
 
-define("COOKIE_PATH", preg_replace("|https?://[^/]+|i", '', $configs["url"]) . "/");
-session_set_cookie_params(null, COOKIE_PATH);
-
 $configs = $actions = $themes = array();
 
 // config dir
@@ -42,17 +39,11 @@ $themes["twitter"]   = $configs["twitter"];
 $themes["dashboard_url"] = $configs["url"] . "/dashboard";
 $themes["home_url"]      = $configs["url"] . "/index.php?a=home";
 $themes["explore_url"]   = $configs["url"] . "/index.php?a=explore";
-$themes["pricing_url"]   = $configs["url"] . "/index.php?a=pricing";
 $themes["login_url"]     = $configs["url"] . "/index.php?a=login";
 $themes["register_url"]  = $configs["url"] . "/index.php?a=register";
-$themes["recover_url"]   = $configs["url"] . "/index.php?a=recover";
 $themes["logout_url"]    = $configs["url"] . "/index.php?a=logout";
-$themes["services_url"]  = $configs["url"] . "/index.php?a=services";
-$themes["help_url"]      = $configs["url"] . "/index.php?a=help";
-$themes["about_url"]     = $configs["url"] . "/index.php?a=about";
-$themes["contact_url"]   = $configs["url"] . "/index.php?a=contact";
-$themes["tos_url"]       = $configs["url"] . "/index.php?a=tos";
-$themes["privacy_url"]   = $configs["url"] . "/index.php?a=privacy";
+
+
 
 // ProfileController usage
 $profileController = new ProfileController();
