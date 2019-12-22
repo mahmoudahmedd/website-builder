@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <!-- Regular Meta Info -->
+    <title>{$title}</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="{$url}/{$theme_url}/css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="{$url}/{$theme_url}/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="{$url}/{$theme_url}/css/animate.css">
+    <link rel="stylesheet" href="{$url}/{$theme_url}/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{$url}/{$theme_url}/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{$url}/{$theme_url}/css/magnific-popup.css">
+    <link rel="stylesheet" href="{$url}/{$theme_url}/css/aos.css">
+    <link rel="stylesheet" href="{$url}/{$theme_url}/css/ionicons.min.css">
+    <link rel="stylesheet" href="{$url}/{$theme_url}/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="{$url}/{$theme_url}/css/jquery.timepicker.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tajawal:300,400,500,600,700">
+    <link rel="stylesheet" href="{$url}/{$theme_url}/css/flaticon.css">
+    <link rel="stylesheet" href="{$url}/{$theme_url}/css/icomoon.css">
+    <link rel="stylesheet" href="{$url}/{$theme_url}/css/style.css">
+    <link rel="stylesheet" href="{$url}/{$theme_url}/css/rtl.css">
+  </head>
+  <body>
+  <style>
+  .sh-side-options 
+  {
+    position: fixed;
+    background-color: rgba(255,255,2555,1);
+    bottom: 36px;
+    left: 0px;
+    z-index: 12345678902;
+    box-shadow: 4px 5px 16px 0px rgba(0,0,0,0.12);
+    -webkit-transition: 0.3s all;
+    transition: 0.2s all;
+    width: 74px;
+    padding: 0 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .sh-side-options.sh-side-options-pages 
+  {
+    /*top: 150px;*/
+  }
+
+  .sh-side-options-item 
+  {
+    display: block;
+  }
+
+  .sh-side-options-item 
+  {
+    text-align: center;
+    margin: 0px;
+    padding: 17px 0;
+    transition: 0.3s all ease-in-out;
+    position: relative;
+    background-color: #fff;
+  }
+
+  .sh-side-options-item:first-child 
+  {
+    border-top-right-radius: 5px;
+  }
+
+  .sh-side-options-item:last-child 
+  {
+    border-bottom-right-radius: 5px;
+  }
+
+  .sh-side-options-item i 
+  {
+    font-size: 24px;
+  }
+
+  .sh-side-options-item:not(:hover):not(:focus) 
+  {
+    color: #9a9a9a!important;
+  }
+
+  .sh-side-options-item:hover .sh-side-options-hover 
+  {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+
+  .sh-side-options-hover 
+  {
+    position: absolute;
+    background-color: #232323;
+    color: #fff;
+    padding: 20px 26px;
+    transform: translateX(0%);
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.2s all ease-in-out;
+    z-index: -100;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 13px;
+  }
+
+  .sh-side-options-hover span 
+  {
+    padding: 0px 3px;
+  }
+
+  .sh-side-options-divider 
+  {
+    margin: 0 10px;
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  @media (max-width: 700px)
+  {
+    .sh-side-options 
+    {
+      width: 52px;
+    }
+
+    .sh-side-options-item 
+    {
+      padding: 10px 0;
+    }
+
+    .sh-side-options-item i 
+    {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 600px) 
+  {
+    .sh-side-options 
+    {
+      /*display: none;*/
+    }
+    .sh-side-options-hover
+    {
+      /*padding: 12px 16px;*/
+      display: none;
+    }
+  }
+
+  @media (max-height: 500px) 
+  {
+    .sh-side-options 
+    {
+      bottom: 30px !important;
+    }
+  }
+
+  .sh-header .container 
+  {
+    width: 90%!important;
+    max-width: 90%!important;
+  }
+
+  body .sh-popover-mini 
+  {
+    background-color: #f7604d!important;
+  }
+
+  body .sh-popover-mini:not(.sh-popover-mini-dark):before 
+  {
+    border-color: transparent #f7604d #f7604d transparent!important;
+  }
+
+  .sh-accordion .panel-title a:not(.collapsed) .sh-accordion-title 
+  {
+    font-weight: bold!important;
+  }
+
+  /*
+  body .primary-desktop-light .sh-header-height .sh-header 
+  {
+    border-bottom-width: 0px!important;
+  }
+  */
+  </style>
+  <div class="sh-side-options">
+    <div class="sh-side-options-container">
+
+    <a href="{$help_url}" target="_blank" class="sh-side-options-item sh-accent-color">
+      <i class="fas fa-question-circle" style="color: #68e5b2"></i>
+      <div class="sh-side-options-hover" style="white-space: nowrap;"><span>مركز المساعدة</span></div>
+    </a>
+
+    <div class="sh-side-options-divider"></div>
+
+    <a href="{$whatsapp}" target="_blank" class="sh-side-options-item sh-accent-color">
+      <i class="fab fa-whatsapp" style="color: #25D366"></i>
+      <div class="sh-side-options-hover" style="white-space: nowrap;"><span>تواصل معنا عبر واتساب</span></div>
+    </a>
+
+    <div class="sh-side-options-divider"></div>
+
+    <a href="{$messenger}" target="_blank" class="sh-side-options-item sh-accent-color">
+      <i class="fab fa-facebook-messenger" style="color: #0084FF"></i>
+      <div class="sh-side-options-hover" style="white-space: nowrap;"><span>تواصل معنا عبر ماسنجر</span></div>
+    </a>
+
+    </div>
+  </div>
+  {$menu}
+  {$content}
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">رُفوف</h2>
+            <p>اصنع هويتك الإلكترونية لنشاطك التجاري بدون الحاجة لأي خبرة تقنية أو مبرمجين.</p>
+            <p class="mt-4"><a href="{$register_url}" class="btn btn-primary p-3">جرب رُفوف الآن</a></p>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4 ml-md-5">
+            <h2 class="ftco-heading-2">عن رُفوف</h2>
+            <ul class="list-unstyled">
+              <li><a href="{$about_url}" class="py-2 d-block">من نحن</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+           <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">عام</h2>
+            <ul class="list-unstyled">
+              <li><a href="{$home_url}" class="py-2 d-block">الرئيسية</a></li>
+              <li><a href="{$explore_url}" class="py-2 d-block">أستكشف الأقرب</a></li>
+              <li><a href="{$login_url}" class="py-2 d-block">تسجيل الدخول</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <div class="block-23 mb-3">
+              <ul>
+                <li><a href="tel:01024970738"><span class="icon icon-phone"></span><span class="text">٠١٠٢٤٩٧٠٧٣٨</span></a></li>
+                <li><a href="mailto:{$email}"><span class="icon icon-envelope"></span><span class="text">{$email}</span></a></li>
+              </ul>
+            </div>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+              <li class="ftco-animate">
+                <a href="{$twitter}" target="_blank"><span class="icon-twitter"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a href="{$facebook}" target="_blank"><span class="icon-facebook"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a href="{$instagram}" target="_blank"><span class="icon-instagram"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>&copy;{$year} <a href="">{$application_name}</a>.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen">
+    <!--<img class="circular" width="48px" height="48px" src="images/stellar.png">-->
+    <svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg>
+  </div>
+
+  <script type="text/javascript">
+  function setCookie(cname, cvalue, exdays)
+	{
+	  var d = new Date();
+	  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+	  var expires = "expires="+ d.toUTCString();
+	  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+
+	function getCookie(c_name) 
+	{
+	    var c_value = document.cookie,
+	        c_start = c_value.indexOf(" " + c_name + "=");
+	    if (c_start == -1) c_start = c_value.indexOf(c_name + "=");
+	    if (c_start == -1) {
+	        c_value = null;
+	    } else {
+	        c_start = c_value.indexOf("=", c_start) + 1;
+	        var c_end = c_value.indexOf(";", c_start);
+	        if (c_end == -1) {
+	            c_end = c_value.length;
+	        }
+	        c_value = unescape(c_value.substring(c_start, c_end));
+	    }
+	    return c_value;
+	}
+  </script>
+
+  <script src="{$url}/{$theme_url}/js/jquery.min.js"></script>
+  <script src="{$url}/{$theme_url}/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="{$url}/{$theme_url}/js/popper.min.js"></script>
+  <script src="{$url}/{$theme_url}/js/bootstrap.min.js"></script>
+  <script src="{$url}/{$theme_url}/js/jquery.easing.1.3.js"></script>
+  <script src="{$url}/{$theme_url}/js/jquery.waypoints.min.js"></script>
+  <script src="{$url}/{$theme_url}/js/jquery.stellar.min.js"></script>
+  <script src="{$url}/{$theme_url}/js/owl.carousel.min.js"></script>
+  <script src="{$url}/{$theme_url}/js/jquery.magnific-popup.min.js"></script>
+  <script src="{$url}/{$theme_url}/js/aos.js"></script>
+  <script src="{$url}/{$theme_url}/js/jquery.animateNumber.min.js"></script>
+  <script src="{$url}/{$theme_url}/js/bootstrap-datepicker.js"></script>
+  <script src="{$url}/{$theme_url}/js/jquery.timepicker.min.js"></script>
+  <script src="{$url}/{$theme_url}/js/scrollax.min.js"></script>
+
+<!--   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWaw4kX39YXcCJYoi0oyBc9v8QGZ3XRlw&sensor=false"></script> -->
+
+  <script src="{$url}/{$theme_url}/js/google-map.js"></script>
+  <script src="{$url}/{$theme_url}/js/main.js"></script>
+
+
+  </body>
+</html>

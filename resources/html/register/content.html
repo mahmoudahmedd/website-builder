@@ -1,0 +1,43 @@
+<div class="hero-wrap">
+    <div class="overlay"></div>
+    <div class="circle-bg"></div>
+    <div class="circle-bg-2"></div>
+    <div class="container-fluid">
+        <div class="slider-text d-md-flex align-items-center" data-scrollax-parent="true">
+            <div class="one-forth pr-md-4 ftco-animate align-self-md-center" data-scrollax=" properties: { translateY: '70%' }">
+                <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">مرحبًا بك في رُفوف</h1>
+                <p class="mb-md-5 mb-sm-3" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                    لديك بالفعل حساب على رُفوف؟ <a href="{$login_url}" style="color: #fff;font-weight: 500">تسجيل الدخول</a>
+                </p>
+                {$register_msg}
+                <form action="{$register_url}" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="manager_name" class="form-control login-form" placeholder="إسم مدير المتجر">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="phone_number" class="form-control login-form" placeholder="رقم الهاتف">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control login-form" placeholder="كلمة المرور">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="register" value="إنشاء حساب" class="btn btn-tiffany btn-block" style="color: #46c5c9 !important;background-color: #ffffff;border-color: #5dd5c4;border-radius: 2px;">
+                    </div>
+                </form>
+            </div>
+            <div class="one-half align-self-md-end align-self-sm-center">
+                <div class="slider-carousel owl-carousel">
+                    <div class="item">
+                        <img src="{$url}/{$theme_url}/images/dashboard_full_1.png" class="img-fluid img" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="{$url}/{$theme_url}/images/dashboard_full_2.png" class="img-fluid img" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="{$url}/{$theme_url}/images/dashboard_full_3.png" class="img-fluid img" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
